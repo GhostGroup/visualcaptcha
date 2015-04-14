@@ -1,0 +1,54 @@
+/**
+ * visualCaptchaHTML class by emotionLoop - 2013.03.28
+ *
+ * This file handles the CSS for the main wCaptcha class.
+ *
+ * This license applies to this file and others without reference to any other license.
+ *
+ * @author emotionLoop | http://emotionloop.com
+ * @link http://visualcaptcha.net
+ * @package visualCaptcha
+ * @license GNU GPL v3
+ * @version 4.0.3
+ */
+div.eL-captcha {
+	margin: 10px 0 10px 10px;
+	padding: 0;
+}
+div.eL-captcha > div.eL-possibilities {
+	margin: 0;
+	padding: 14px 0 0 0;
+	display: block;
+	float: left;
+	height: 46px;
+}
+div.eL-captcha > div.eL-possibilities > img {
+	padding: 0 4px 4px 4px !important;
+}
+
+div.eL-captcha > div.eL-possibilities > img {
+	width: 32px;
+	height: 32px;
+	display: block;
+	float: left;
+	margin: 0;
+	padding: 0 4px;
+	z-index: 5;
+}
+
+div.eL-captcha .clearfix,
+div.eL-captcha.clearfix {
+	zoom: 1;
+}
+div.eL-captcha .clearfix:before,
+div.eL-captcha .clearfix:after,
+div.eL-captcha.clearfix:before,
+div.eL-captcha.clearfix:after {
+	display: table;
+	line-height: 0;
+	content: "";
+}
+div.eL-captcha .clearfix:after,
+div.eL-captcha.clearfix:after {
+	clear: both;
+}
