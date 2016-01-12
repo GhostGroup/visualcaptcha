@@ -5,7 +5,7 @@ require 'visualcaptcha/version'
 
 Gem::Specification.new do |gem|
   gem.name          = "visualcaptcha"
-  gem.version       = VisualCaptcha::VERSION
+  gem.version       = GGVisualCaptcha::VERSION
   gem.authors       = ["GhostGroup"]
   gem.description   = %q{Visual Captcha}
   gem.summary       = %q{Visual Captcha}
