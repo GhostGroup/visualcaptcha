@@ -1,4 +1,4 @@
-module VisualCaptcha
+module GGVisualCaptcha
   module ViewHelper
 
     def show_visual_captcha(options = {})
@@ -7,7 +7,7 @@ module VisualCaptcha
       #key = visual_captcha_key('captcha')
 
       number = 6
-      captcha = VisualCaptcha::Captcha.new(number)
+      captcha = GGVisualCaptcha::Captcha.new(number)
       challenge = captcha.build
 
       session[:captcha] = challenge
@@ -23,9 +23,9 @@ module VisualCaptcha
 
       def visual_captcha_key(key_name = nil)
         if key_name.nil?
-          session[:captcha] ||= VisualCaptcha::Utils.generate_key(session[:id].to_s, 'captcha')
+          session[:captcha] ||= GGVisualCaptcha::Utils.generate_key(session[:id].to_s, 'captcha')
         else
-          VisualCaptcha::Utils.generate_key(session[:id].to_s, key_name)
+          GGVisualCaptcha::Utils.generate_key(session[:id].to_s, key_name)
         end
       end
   end

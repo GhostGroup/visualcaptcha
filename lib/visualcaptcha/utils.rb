@@ -1,6 +1,6 @@
 require 'digest/sha1'
 
-module VisualCaptcha #:nodoc
+module GGVisualCaptcha #:nodoc
   module Utils #:nodoc
     def self.generate_key(*args)
       args << Time.now.to_s

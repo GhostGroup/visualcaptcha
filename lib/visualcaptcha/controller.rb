@@ -1,4 +1,4 @@
-module VisualCaptcha
+module GGVisualCaptcha
   module ControllerHelpers
     def visual_captcha_valid?
       return true if Rails.env.test?

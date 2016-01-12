@@ -1,7 +1,7 @@
 require "visualcaptcha/version"
 require "visualcaptcha/engine"
 
-module VisualCaptcha
+module GGVisualCaptcha
   autoload :ViewHelper, 'visualcaptcha/view'
   autoload :ControllerHelpers, 'visualcaptcha/controller'
   autoload :Utils, 'visualcaptcha/utils'
@@ -18,7 +18,7 @@ module VisualCaptcha
       @id = id
       @image = image
       @title = title
-      @encrypted = VisualCaptcha::Utils.generate_key(id)
+      @encrypted = GGVisualCaptcha::Utils.generate_key(id)
     end
 
   end
